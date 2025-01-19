@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header stijlen */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.63em 1.25em;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    font-size: 0.9em;
+    list-style: none;
+    gap: 3em;
+}
+
+header img {
+    height: 2.8em;
+    width: 2.1em;
+}
+
+li a {
+    text-decoration: none;
+    color: #dcd5cd;
+}
+
+/* stijlen */
+body {
+    background-color: #422329;
+    margin: 0;
+}
+
+.body2 {
+    background-color: #423c0a;
+}
+
+h1 {
+    color: #dcd5cd;
+}
+
+p {
+    color: #dcd5cd;
+}
+
+h2 {
+    color: #dcd5cd;
+}
+
+/* afbeelding */
+img {
+    width: 100%;
+    height: 20em;
+}
+
+/* about weight & wear tekst */
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p {
+    margin-top: 0;
+    width: 93%;
+}
+
+/* tekst achter foto, komt van bron https://www.w3schools.com/howto/howto_css_image_text.asp */
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #dcd5cd;
+    font-size: 3.5em;
+}
+
+/* foto naast elkaar */
+.foto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    margin: 1em;
+}
+
+.foto1 img {
+    width: 48%;
+    height: auto;
+}
+
+/* how it works */
+.step-one img {
+    width: 95px;
+    height: 95px;
+}
+.step-one p {
+    color: #422329;
+    text-align: left;
+}
+
+.step-two p {
+    color: #422329;
+    text-align: right;
+}
+
+.step-one h2 {
+    color: #422329;
+    text-align: left;
+}
+
+.step-two h2 {
+    color: #422329;
+}
+
+
+.step-one {
+    display: flex;
+    align-items: center;
+    color: #422329;
+    background-color: #dcd5cd;
+    border: 0.11em solid #ece6df;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+    box-shadow: 0.5em 0.5em #74736b;
+    padding: 0em 0.5em 1em 0.5em;
+    margin: 1.5em 0.8em 0.8em 0em;
+}
+
+.step-two {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #422329;
+    background-color: #dcd5cd;
+    border: 0.11em solid #ece6df;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    box-shadow: 0.5em 0.5em #74736b;
+    padding: 0em 0.5em 1em 0.5em;
+    margin: 1.5em 0em 0.8em 0.8em;
+}
+
+
+/* bron chatgtp: "hoe zet ik 2 afbeelding naast elkaar" */
+.image-container img {
+    width: calc(50% - 0.6em);
+    height: auto;
+    background-color: #ece6df;
+    gap: 5em;
+}
+
