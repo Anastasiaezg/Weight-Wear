@@ -7,11 +7,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.63em 1.25em;
+    padding: 0.6em 1.25em;
 }
 
 nav a {
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #978c8e
 }
 
 header ul {
@@ -22,8 +26,8 @@ header ul {
 }
 
 header img {
-    height: 2.8em;
     width: 2.1em;
+    height: auto;
 }
 
 li a {
@@ -31,38 +35,47 @@ li a {
     color: #dcd5cd;
 }
 
-/* stijlen */
+/* Lettertype stijlen */
 body {
     background-color: #422329;
-    margin: 0;
+    margin: 0em;
 }
 
 .body2 {
     background-color: #423c0a;
 }
 
-h1 {
+h1, p, h2 {
     color: #dcd5cd;
 }
 
-p {
-    color: #dcd5cd;
-}
-
-h2 {
-    color: #dcd5cd;
-}
+/* Homepagina */
 
 /* afbeelding */
 img {
     width: 100%;
-    height: 20em;
+    height: 25em;
+}
+
+/* buttn */
+.button {
+    display: inline-block;
+    background-color: #dcd5cd;
+    color: #422329;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3em;
+}
+
+.button:hover {
+    background-color: #292022
 }
 
 /* about weight & wear tekst */
 section {
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
 }
@@ -70,6 +83,16 @@ section {
 section p {
     margin-top: 0;
     width: 93%;
+}
+
+
+/* foto naast elkaar */
+.foto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    margin: 1em;
 }
 
 /* tekst achter foto, komt van bron https://www.w3schools.com/howto/howto_css_image_text.asp */
@@ -93,21 +116,12 @@ section p {
     font-size: 3.5em;
 }
 
-/* foto naast elkaar */
-.foto1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7em;
-    margin: 1em;
-}
-
 .foto1 img {
     width: 48%;
     height: auto;
 }
 
-/* how it works */
+/* How it works pagina */
 
 .step-one p {
     color: #422329;
@@ -125,7 +139,6 @@ section p {
     color: #422329;
 }
 
-
 .step-one {
     display: flex;
     flex-direction: row;
@@ -133,7 +146,7 @@ section p {
     align-items: center;
     color: #422329;
     background-color: #dcd5cd;
-    border: 0.11em solid #ece6df;
+    border: 0.1em solid #ece6df;
     border-top-right-radius: 5em;
     /* komt van bron: https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius */
     border-bottom-right-radius: 5em;
@@ -144,6 +157,7 @@ section p {
 }
 
 .step-one img {
+    margin-top: 0.5em;
     max-width: 30%;
     height: auto;
     align-self: flex-end;
@@ -174,9 +188,8 @@ section p {
     background-color: yellow;
     display: inline-block;
     padding: 0.2em 0.5em;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-weight: bold;
-
 }
 
 .step-one ul li:nth-child(2) {
@@ -184,7 +197,7 @@ section p {
     background-color: green;
     display: inline-block;
     padding: 0.2em 0.5em;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-weight: bold;
 }
 
@@ -193,7 +206,7 @@ section p {
     background-color: red;
     display: inline-block;
     padding: 0.2em 0.5em;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-weight: bold;
 }
 
@@ -202,7 +215,7 @@ section p {
     background-color: orange;
     display: inline-block;
     padding: 0.2em 0.5em;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-weight: bold;
 }
 .step-one ul li:nth-child(5) {
@@ -210,9 +223,11 @@ section p {
     background-color: blue;
     display: inline-block;
     padding: 0.2em 0.5em;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-weight: bold;
 }
+
+/* Clothing pagina */
 
 /* 2 foto's naast elkaar en onder elkaar */
 .image-container {
@@ -226,4 +241,50 @@ section p {
 .image-container img {
     width: 100%;
     height: auto;
+}
+
+/* Footer */
+
+footer {
+background-color: #292022;
+color: #dcd5cd;
+padding: 0.5em 1em;
+font-size: 1em;
+text-align: center;
+margin-top: 1.5em;
+}
+
+
+.footer-about h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.footer-about p {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    line-height: 1.6em;
+}
+
+.store-link {
+  display: inline-block;  
+  color: #f5f5f5;
+  background-color: #422329;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
+
+.store-link:hover {
+    background-color: #423c0a;
+}
+
+.footer-bottom {
+    margin-top: 1.5em;
+    font-size: 0.9em;
+    color: #bbb;
+    border-top: 0.1em solid #444;
+    padding-top: 1em;
+    font-size: 0.7em;
 }
