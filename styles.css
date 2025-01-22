@@ -185,7 +185,7 @@ section {
 
 .step-one ul li:first-child {
     color: black;
-    background-color: rgb(234, 234, 115);
+    background-color: rgb(228, 94, 94);
     display: inline-block;
     padding: 0.2em 0.5em;
     border-radius: 0.3em;
@@ -203,7 +203,7 @@ section {
 
 .step-one ul li:nth-child(3) {
     color: black;
-    background-color: rgb(228, 94, 94);
+    background-color: rgb(234, 234, 115);
     display: inline-block;
     padding: 0.2em 0.5em;
     border-radius: 0.3em;
