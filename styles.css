@@ -85,11 +85,6 @@ section {
     padding: 0.8em;
 }
 
-section p {
-    margin-top: 0;
-    width: 93%;
-}
-
 /* foto naast elkaar */
 .foto1 {
     display: flex;
